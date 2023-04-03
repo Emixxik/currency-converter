@@ -1,0 +1,30 @@
+#include<iostream>
+#include<list>
+#include<windows.h>
+
+using namespace std;
+
+int main() {
+    int choice;
+    int amount;
+    cout << "currency converter" << endl;
+    float USD = 21.52;
+    float CZK = 0.046;
+    cout << "1) CZK to USD" << endl;
+    cout << "2) USD to CZK" << endl; 
+    cout << "your choice: "; cin >> choice ;
+    cout << "enter amount: "; cin >> amount ;
+    cout << "converting.." << endl;   
+    if(choice == 1)
+    {
+        cout << amount << " CZK equals to " << amount * CZK << " USD" << endl;
+    }
+    if(choice == 2)
+    {
+        cout << amount << " USD equals to " << amount * USD << " CZK" << endl;
+
+    }
+    return 0;
+}    
+
+
